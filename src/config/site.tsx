@@ -8,43 +8,11 @@ export const siteConfig = {
       label: "Home",
       href: "/",
     },
-    {
-      label: "Products",
-      href: "/products",
-    },
-    {
-      label: "Shops",
-      href: "/shop",
-    },
-    {
-      label: "Compare",
-      href: "/compare",
-    },
-    {
-      label: "History",
-      href: "/history",
-    },
   ],
   navMenuItems: [
     {
       label: "Home",
       href: "/",
-    },
-    {
-      label: "Products",
-      href: "/products",
-    },
-    {
-      label: "Shops",
-      href: "/shop",
-    },
-    {
-      label: "Compare",
-      href: "/compare",
-    },
-    {
-      label: "History",
-      href: "/history",
     },
   ],
 };
