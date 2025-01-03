@@ -8,7 +8,7 @@ import { Toaster } from "react-hot-toast";
 import { UserContextProvider } from "@/src/Context/user.context";
 import { ThemeProviderProps } from "next-themes/dist/types";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
-import { AdditionalContextProvider } from "@/src/Context/aditional.context";
+import { AppProvider } from "@/src/Context/AppContext";
 
 export interface ProvidersProps {
   children: React.ReactNode;
@@ -23,7 +23,7 @@ export function Providers({ children, themeProps }: ProvidersProps) {
       <NextThemesProvider {...themeProps}>
         <QueryClientProvider client={queryClient}>
           <UserContextProvider>
-            <AdditionalContextProvider>{children}</AdditionalContextProvider>
+            <AppProvider >{children}</AppProvider >
           </UserContextProvider>
         </QueryClientProvider>
         <Toaster />
