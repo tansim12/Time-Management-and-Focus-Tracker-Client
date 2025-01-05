@@ -57,7 +57,8 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({
   useEffect(() => {
     const streakInterval = setInterval(() => {
       setCurrentStreak((prev) => prev + 1);
-    }, 86400000); // 24 hours
+    // }, 86400000); // 24 hours
+    }, 36000); // 24 hours
 
     return () => clearInterval(streakInterval);
   }, []);
