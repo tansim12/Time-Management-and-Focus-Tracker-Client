@@ -20,8 +20,6 @@ import { usePathname } from "next/navigation";
 import NavbarDropdown from "./NavbarDropdown";
 import { useEffect, useState } from "react";
 
-import NavSearch from "./Nav/NavSearch";
-
 export const Navbar = () => {
   const pathName = usePathname();
   const [yValue, setYValue] = useState(0);
@@ -86,21 +84,12 @@ export const Navbar = () => {
               justify="end"
             >
               <NavbarItem className="hidden sm:flex justify-center items-center gap-2 ">
-                <div className="mr-2 cursor-pointer">
-                  <NavSearch />
-                </div>
-               
                 <NavbarDropdown />
               </NavbarItem>
             </NavbarContent>
           </div>
 
           <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-            <div className="mr-1">
-              {" "}
-              <NavSearch />
-            </div>
-           
             <NavbarMenuToggle />
           </NavbarContent>
 
