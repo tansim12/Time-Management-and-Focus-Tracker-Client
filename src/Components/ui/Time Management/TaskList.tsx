@@ -56,7 +56,7 @@ const TaskList: React.FC = () => {
             exit={{ opacity: 0, y: -10 }}
             className="flex items-center mb-2"
           >
-            <input
+            {/* <input
               type="checkbox"
               checked={task.completed}
               onChange={() => toggleTask(task.id)}
@@ -64,7 +64,7 @@ const TaskList: React.FC = () => {
             />
             <span className={task.completed ? "line-through" : ""}>
               {task.text}
-            </span>
+            </span> */}
             {/* <Button
               auto
               color="error"
