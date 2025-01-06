@@ -65,7 +65,7 @@ const TaskList: React.FC = () => {
             <span className={task.completed ? "line-through" : ""}>
               {task.text}
             </span>
-            <Button
+            {/* <Button
               auto
               color="error"
               size="sm"
@@ -73,7 +73,7 @@ const TaskList: React.FC = () => {
               className="ml-auto"
             >
               Delete
-            </Button>
+            </Button> */}
           </motion.div>
         ))}
       </AnimatePresence>
