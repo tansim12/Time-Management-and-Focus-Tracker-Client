@@ -6,12 +6,12 @@ import { useAppContext } from "@/src/Context/AppContext";
 const GamificationElements: React.FC = () => {
   const { currentStreak } = useAppContext();
 
-  // const badges = [
-  //   { name: "Cosmic Explorer", icon: "��" },
-  //   { name: "Nebula Navigator", icon: "🌌" },
-  //   { name: "Starlight Sage", icon: "✨" },
-  //   { name: "Galaxy Guardian", icon: "🌠" },
-  // ];
+  const badges = [
+    { name: "Cosmic Explorer", icon: "��" },
+    { name: "Nebula Navigator", icon: "🌌" },
+    { name: "Starlight Sage", icon: "✨" },
+    { name: "Galaxy Guardian", icon: "🌠" },
+  ];
 
   return (
     <div className="space-y-6">
